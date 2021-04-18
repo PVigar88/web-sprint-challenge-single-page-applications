@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PizzaForm from "./components/PizzaForm";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link, useHistory } from "react-router-dom";
 import Home from "./components/Home";
 import * as yup from "yup";
 import schema from "./validation/formSchema";
 import axios from "axios";
+import Confirmation from "./components/Confirmation";
 
 const initialFormData = {
   first_name: "",
@@ -37,13 +38,15 @@ const App = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
   const [disabled, setDisabled] = useState(initialDisabled);
+  const hist = useHistory();
 
   const postNewOrder = (newOrder) => {
     axios
-      .post("https://reqres.in/", newOrder)
+      .post("https://reqres.in/api/pizza", newOrder)
       .then((res) => {
         console.log(res.data);
-        setPizzaOptions([...pizzaOptions, res.data]);
+        setPizzaOptions(res.data);
+
         setFormData(initialFormData);
       })
       .catch((err) => {
@@ -95,6 +98,7 @@ const App = () => {
       specialInstructions: formData.specialInstructions,
     };
     postNewOrder(newOrder);
+    hist.push(`/confirmation`);
   };
   useEffect(() => {
     schema.isValid(formData).then((valid) => {
@@ -107,7 +111,7 @@ const App = () => {
         <h1>Lambda Eats</h1>
         <div>
           <Link to="/">Home</Link>
-          <Link>Help</Link>
+          <Link to="/help">Help</Link>
         </div>
       </nav>
 
@@ -120,6 +124,9 @@ const App = () => {
             disabled={disabled}
             errors={formErrors}
           />
+        </Route>
+        <Route exact path="/confirmation">
+          <Confirmation options={pizzaOptions} />
         </Route>
         <Route path="/">
           <Home />

@@ -90,3 +90,26 @@ nav {
 
   width: 75%;
 }
+.pizzaDog {
+  width: 60%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.pizzaDog img {
+  width: 100%;
+  border: black solid 1px;
+}
+.confirmationPage {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.orderDetails {
+  background-color: white;
+  width: 30%;
+}
+.orderDetails p {
+  margin-left: 2%;
+}
