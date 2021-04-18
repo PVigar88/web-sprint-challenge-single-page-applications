@@ -42,7 +42,7 @@ nav {
 .pizzaHeader {
   background-image: url("./Assets/Pizza.jpg");
   height: 200px;
-  color: white;
+  color: black;
   font-size: 3em;
   text-align: center;
 }
@@ -55,4 +55,38 @@ nav {
 }
 .homePage h3 {
   padding-left: 3%;
+}
+.pizzaBuilder {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  width: 80%;
+  margin-left: 12%;
+}
+.pizzaBuilder h2 {
+  margin-left: 2%;
+}
+
+.pane {
+  margin-left: 3%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.toppings {
+  justify-content: space-evenly;
+}
+.topping input {
+  width: 25%;
+}
+.pane input {
+  box-sizing: border-box;
+}
+.orderButton {
+  margin: 1%;
+  margin-left: 10%;
+  padding: 1%;
+
+  width: 75%;
 }
