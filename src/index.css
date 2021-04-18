@@ -39,3 +39,20 @@ nav {
   margin-bottom: 32px;
   border-bottom: white solid 2px;
 }
+.pizzaHeader {
+  background-image: url("./Assets/Pizza.jpg");
+  height: 200px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+.pizzaLink {
+  border: black 1px solid;
+  width: 15%;
+  text-decoration: none;
+  color: white;
+  background-color: #ec3944;
+}
+.homePage h3 {
+  padding-left: 3%;
+}
