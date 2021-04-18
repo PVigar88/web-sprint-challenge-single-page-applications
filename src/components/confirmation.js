@@ -1,5 +1,5 @@
 import React from "react";
-
+import ToppingsList from "./ToppingsList";
 export default function Confirmation(props) {
   const { options } = props;
   if (!options) {
@@ -14,10 +14,8 @@ export default function Confirmation(props) {
         </p>
         <p>Size: &nbsp; {options.size}</p>
         <p>Sauce: &nbsp; {options.sauce}</p>
-        {console.log(options.toppings)}
-        <ul>
-          <p>Toppings:{options.toppings}</p>
-        </ul>
+        <ToppingsList toppings={options.toppings} />
+        <p>Special Instructions: &nbsp; {options.specialInstructions}</p>
       </div>
       <div className="pizzaDog">
         <h3>While you wait, how about a dog with a pizza</h3>
