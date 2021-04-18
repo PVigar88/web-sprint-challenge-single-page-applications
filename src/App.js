@@ -16,7 +16,7 @@ const App = () => {
 
       <Switch>
         <Route exact path="/pizza">
-          <PizzaForm></PizzaForm>
+          <PizzaForm />
         </Route>
         <Route path="/">
           <Home />

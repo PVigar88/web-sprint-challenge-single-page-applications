@@ -4,12 +4,12 @@ import React from "react";
 export default function RestaurantPanels() {
   return (
     <div>
-      <div className="resaurantPanelsTop">
+      <div className="restaurantPanels top">
         <RestaurantPanel />
         <RestaurantPanel />
         <RestaurantPanel />
       </div>
-      <div className="restauranPanelsBottom">
+      <div className="restaurantPanels bottom">
         <RestaurantPanel />
         <RestaurantPanel />
         <RestaurantPanel />
