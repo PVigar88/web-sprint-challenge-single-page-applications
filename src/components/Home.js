@@ -5,8 +5,6 @@ import RestaurantPanels from "./RestaurantPanels";
 export default function Home() {
   return (
     <div>
-      <h1>Lambda Eats</h1>
-
       <div>
         Your Favorite Food, Delivered While Coding
         <Link to="/pizza">Pizza?</Link>
