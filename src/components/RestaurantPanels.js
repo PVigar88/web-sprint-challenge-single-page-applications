@@ -1,4 +1,5 @@
 import RestaurantPanel from "./RestaurantPanel";
+import React from "react";
 
 export default function RestaurantPanels() {
   return (

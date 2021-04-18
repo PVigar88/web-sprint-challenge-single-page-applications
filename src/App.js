@@ -1,19 +1,19 @@
 import React from "react";
 import PizzaForm from "./components/PizzaForm";
+import { Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-
-      <div>
-        Your Favorite Food, Delivered While Coding
-        {/* button or link here */}
-      </div>
-
-      <h3>Food Delivery Near here</h3>
-
-      <PizzaForm></PizzaForm>
+      <Switch>
+        <Route exact path="/pizza">
+          <PizzaForm></PizzaForm>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </>
   );
 };
