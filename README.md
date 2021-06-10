@@ -31,17 +31,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+
+the useRoutematch hook allows us to replace redundant url's and pathways in code allowing us to make pathway code more flexible and reduce the amount of repeated code that is necessary.
+
 1. How would you explain form validation to someone who has never programmed before?
+
+Form validation is the process of making your form inputs checked to see if they are required and if they are required the form with notify the user and/or prevent the submission of form data unless everything is completed.
+
 1. In 1-2 sentences, define end to end testing.
+
+End-to-end testing is used to evaluate the entire user experience from beginning to end. It simulates the various actions that are expected to be performed by the user in order to ensure that all features are in working order.
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`
+- [x] Create a forked copy of this project
+- [] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: `git checkout -b <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: `git push origin <firstName-lastName>`
 
