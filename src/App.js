@@ -62,7 +62,7 @@ const App = () => {
       .then(() => {
         setFormErrors({
           ...formErrors,
-          [name]: " ",
+          [name]: "",
         });
       })
       .catch((err) => {

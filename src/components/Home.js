@@ -8,7 +8,7 @@ export default function Home() {
       <div className="pizzaHeader">
         <p>Your Favorite Food, Delivered While Coding</p>
         <Link className="pizzaLink" to="/pizza">
-          Pizza?
+          Want Pizza?
         </Link>
       </div>
 

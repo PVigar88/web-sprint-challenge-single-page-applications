@@ -184,6 +184,7 @@ export default function PizzaForm(props) {
       </label>
 
       <label className="instructions pane">
+        {/* COULD ALSO HAVE BEEN A TEXT AREA */}
         Special Instructions: &nbsp;
         <input
           type="text"
