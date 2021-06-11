@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import * as yup from "yup";
 import schema from "./validation/formSchema";
 import axios from "axios";
-import Confirmation from "./components/Confirmation";
+import Confirmation from "./components/confirmation";
 
 const initialFormData = {
   first_name: "",
